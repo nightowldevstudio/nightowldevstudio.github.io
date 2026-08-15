@@ -1,66 +1,91 @@
-Night Owl — Software Studio
-  
-  
-  
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Night Owl — Software Studio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: '#8b5cf6',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { 
+      background-color: #0b0f19; 
+      color: #f3f4f6; 
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between font-sans antialiased">
 
-
-
-  
-  
-    
-      🦉
-    
-    
+  <!-- Header / Hero -->
+  <header class="max-w-4xl mx-auto px-6 pt-16 pb-12 text-center">
+    <div class="inline-flex items-center justify-center w-20 h-20 rounded-full bg-slate-900 border border-slate-800 shadow-xl mb-6">
+      <span class="text-4xl">🦉</span>
+    </div>
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight text-white mb-4">
       Night Owl
-    
-    
+    </h1>
+    <p class="text-lg text-slate-400 max-w-xl mx-auto">
       Crafting opinionated software, web tools, and experiments in the late hours.
-    
-  
+    </p>
+  </header>
 
-  
-  
-    
+  <!-- Main Content / Projects -->
+  <main class="max-w-4xl mx-auto px-6 py-8 flex-grow w-full">
+    <h2 class="text-xs font-semibold tracking-wider text-slate-500 uppercase mb-6">
       Featured Projects
-    
+    </h2>
 
-    
-      
-      
-        
-          Project Alpha
-          Live
-        
-        
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <!-- Project Card 1 -->
+      <a href="https://github.com/nightowldevstudio" target="_blank" class="block p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-violet-500/50 transition duration-200">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-white text-lg">Project Alpha</h3>
+          <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 font-medium">Live</span>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">
           A minimalist utility application built to streamline daily workflows.
-        
-        
-          TypeScript
-          Next.js
-        
-      
+        </p>
+        <div class="flex items-center gap-2 text-xs text-slate-500">
+          <span class="px-2 py-0.5 rounded bg-slate-800">TypeScript</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800">Next.js</span>
+        </div>
+      </a>
 
-      
-      
-        
-          Project Beta
-          In Dev
-        
-        
+      <!-- Project Card 2 -->
+      <a href="https://github.com/nightowldevstudio" target="_blank" class="block p-6 rounded-xl bg-slate-900/60 border border-slate-800 hover:border-violet-500/50 transition duration-200">
+        <div class="flex items-center justify-between mb-3">
+          <h3 class="font-bold text-white text-lg">Project Beta</h3>
+          <span class="text-xs px-2.5 py-1 rounded-full bg-amber-500/10 text-amber-400 font-medium">In Dev</span>
+        </div>
+        <p class="text-sm text-slate-400 mb-4">
           Experimental mobile tool designed for seamless tracking and automation.
-        
-        
-          React Native
-          Expo
-        
-      
-    
-  
+        </p>
+        <div class="flex items-center gap-2 text-xs text-slate-500">
+          <span class="px-2 py-0.5 rounded bg-slate-800">React Native</span>
+          <span class="px-2 py-0.5 rounded bg-slate-800">Expo</span>
+        </div>
+      </a>
+    </div>
+  </main>
 
-  
-  
-    
-      GitHub
-      Contact
-    
-    © Night Owl. Built under the night sky.
+  <!-- Footer -->
+  <footer class="max-w-4xl mx-auto px-6 py-12 text-center text-xs text-slate-600 w-full border-t border-slate-900">
+    <div class="flex justify-center gap-6 mb-4 text-slate-400">
+      <a href="https://github.com/nightowldevstudio" target="_blank" class="hover:text-violet-400 transition">GitHub</a>
+      <a href="mailto:hello.nightowl@addy.io" class="hover:text-violet-400 transition">Contact</a>
+    </div>
+    <p>© Night Owl. Built under the night sky.</p>
+  </footer>
+
+</body>
+</html>
